@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title> tweetter </title>
+    </head>
+
+
+   <body>
+
+  <div class="container">
+  <div class="row">
+
+<div class="col-md-12 col-sm-12 col-xl-2">
+    <div class="d-flex flex-column bd-highlight mb-3">
+      <div class="p-2 bd-highlight"><i class="fab fa-twitter"></i></div>
+
+      <div class="p-2 menut bd-highligh active"><i class="fas fa-home"></i>   Accueil</div>
+      <div class="p-2 menut bd-highlight"><i class="fas fa-hashtag"></i>   Explorer</div>
+      <div class="p-2 menut bd-highlight"><i class="far fa-bell"></i>   Notifications</div>
+      <div class="p-2 menut bd-highlight"><i class="far fa-envelope"></i>   Messages</div>
+      <div class="p-2 menut bd-highlight"> <i class="fas fa-file-upload"></i> Signets</div>
+      <div class="p-2 menut bd-highlight"><i class="far fa-list-alt"></i>   Listes</div>
+      <div class="p-2 menut bd-highlight"><i class="far fa-user-circle"></i>   Profil</div>
+      <div class="p-2 menut bd-highlight"> <i class="far fa-comment-dots"></i>   PLus</div>
+      <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg rounded-pill">Tweetter</button>
+      </div>
+    </div>
+</div>
+
+
+ <div class="col-md-12 col-sm-12 col-xl-6">
+
+
+  <div class="border border-light">
+  <div class="p-2 bd-highlight font-weight-bold h2">TWEETER</div>
+
+  </div> 
+
+
+  <div class="border border-light">
+   
+
+   
+   
+  <form method="post" action="">
+  <div class="form-group">
+    <i class="fas fa-user-circle"></i>
+    <label for="exampleFormControlTextarea1">Quoi de neuf ?</label>
+    <textarea class="form-control" id="text" placeholder="On vous écoute !" class="textarea" rows="3"></textarea>
+  </div>
+
+</form>
+
+<button onclick="addItem()" class="btn btn-primary btn-lg rounded-pill">Tweetter</button>
+
+<br><br>
+<div id="status"></div>
+
+
+  </div> 
+
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        
+      <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">On a testé… la Switch Lite, la version 100 % nomade de la console reine de Nintendo <a href="https://t.co/hkTjzk1thG">https://t.co/hkTjzk1thG</a></p>&mdash; Le Monde (@lemondefr) <a href="https://twitter.com/lemondefr/status/1174781078055374854?ref_src=twsrc%5Etfw">September 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+    </div>
+    <div class="carousel-item">
+     
+  <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Nouvel épisode hors norme dans la saga du Brexit. L’ancien premier ministre conservateur John Major a accusé Boris Johnson d’avoir menti à la reine pour suspendre le Parlement. <a href="https://t.co/uFL7fCSsm4">https://t.co/uFL7fCSsm4</a></p>&mdash; Le Monde (@lemondefr) <a href="https://twitter.com/lemondefr/status/1174760941730353153?ref_src=twsrc%5Etfw">September 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
+    </div>
+    <div class="carousel-item">
+      <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Forte mobilisation à EDF contre le projet de scission de l’entreprise <a href="https://t.co/BG7hwZWXgW">https://t.co/BG7hwZWXgW</a></p>&mdash; Le Monde (@lemondefr) <a href="https://twitter.com/lemondefr/status/1174777867009495042?ref_src=twsrc%5Etfw">September 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+    </div>
+  </div>
+</div>
+
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+            <div class="p-2 menut bd-highlight"><i class="far fa-comment"></i></i> 22</div>
+              <div class="p-2 menut bd-highlight"><i class="fas fa-retweet"></i> 72</div> 
+              <div class="p-2 menut bd-highlight"><i class="fas fa-heart"></i> 25</div>
+              <div class="p-2 menut bd-highlight"><i class="far fa-share-square"></i> 12</div>
+        </div>
+      </li>
+      
+      <li class="list-group-item"></li>
+    </ul>
+      
+</div>
+
+
+
+
+
+
+
+ <div class="col-md-12 col-sm-12 col-xl-4">
+
+  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+    
+  </form>
+
+  <br>
+
+  <div class="jumbotron jumbotron-fluid rounded-lg">
+  <div class="container">
+      <ul class="list-group list-group-flush">
+
+      <h4 class="text-uppercase">Personnes pertinentes</h4>
+
+      <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">La compagnie française XL Airways demande son placement en redressement judiciaire <a href="https://t.co/0s0EtrvFgm">https://t.co/0s0EtrvFgm</a></p>&mdash; Le Monde (@lemondefr) <a href="https://twitter.com/lemondefr/status/1174788008106758144?ref_src=twsrc%5Etfw">September 19, 2019</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      
+    </ul>
+  </div>
+</div>
+
+
+  <div class="jumbotron jumbotron-fluid rounded-lg">
+  <div class="container">
+      <ul class="list-group list-group-flush">
+      <li class="list-group-item">Tendances pour vous <i class="fas fa-cog"></i></li>
+      <li class="list-group-item">#VALP</li>
+      <li class="list-group-item">TBC</li>
+      <li class="list-group-item">#miklsurnrj</li>
+      <li class="list-group-item"> Voir plus </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<div class="d-flex justify-content-between bd-highlight m-3">
+  <p class="font-weight-light menut">conditions</p><br>
+  <p class="font-weight-light menut"> confidentialité</p>
+  <p class="font-weight-light menut">Cookies</p>
+</div>
+
+<div class=" d-flex justify-content-between bd-highlight m-3">
+  <p class="font-weight-light menut">Informations sur les publicités</p><br>
+  <p class="font-weight-light menut"> Plus</p>
+</div>
+
+<div class="d-flex flex-row bd-highlight m-3">
+  <p class="font-weight-light">© 2019 Twitter, Inc.</p><br>
+  
+</div>
+
+</div>
+</div>
+</div>
+  
+  
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="./script.js" type="text/javascript" charset="utf-8" async defer></script>
+
+  </body>
+
+
+</html>

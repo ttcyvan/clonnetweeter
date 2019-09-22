@@ -1,0 +1,10 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.menut:hover{
+	color: blue;
+	font-weight: bold;
+	}
+
+
